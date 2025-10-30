@@ -1,0 +1,5 @@
+name: Hello
+
+on:
+  push:
+    branched: [ main ]
