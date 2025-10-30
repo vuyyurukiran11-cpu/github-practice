@@ -2,4 +2,15 @@ name: Hello
 
 on:
   push:
-    branched: [ main ]
+    branches: [ main ]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+      - name: list files
+        run: ls -l
+      - name: show current branch
+        run: git branch
