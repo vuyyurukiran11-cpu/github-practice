@@ -10,3 +10,8 @@ jobs:
     steps:
       - name: Say hi
         run: echo "Hello GitHub Actions 🚀"
+      - name : show date and time
+        run: |
+          date
+          pwd
+          
